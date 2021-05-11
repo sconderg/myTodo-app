@@ -26,10 +26,12 @@ const Header = () => {
     }
     const addTodo = async (e) => {
         e.preventDefault();
-        db.collection('tasks').doc(user.uid).collection('userTasks').add({
-            title:inputRef.current.value,
-            completed:false
-        });
+        if(inputRef.current.value !== '') {
+            db.collection('tasks').doc(user.uid).collection('userTasks').add({
+                title:inputRef.current.value,
+                completed:false
+            });
+        }
 
         inputRef.current.value = '';
     }
