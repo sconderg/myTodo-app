@@ -39,7 +39,7 @@ const Header = () => {
     useEffect(() => {
         if(userSS?.theme === 'dark') {
             document.body.classList.add('dark');
-            themeRef.current.innerHTML =  `<img src='/images/icon-moon.svg' alt="moon" />`
+            themeRef.current.innerHTML =  `<img src='/images/icon-sun.svg' alt="moon" />`
         }
     }, [userSS?.theme])
     return (
