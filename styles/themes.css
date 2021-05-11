@@ -1,0 +1,52 @@
+body.dark {
+  background-color: #161722;
+}
+
+body.dark .header {
+  background-image: url("/images/bg-mobile-dark.jpg");
+}
+
+@media (min-width: 767px) {
+  body.dark .header {
+    background-image: url("/images/bg-desktop-dark.jpg");
+  }
+}
+
+body.dark .header .inputContainer {
+  background-color: #25273c;
+}
+
+body.dark .header .inputContainer input {
+  color: white;
+}
+
+body.dark .task {
+  background-color: #25273c;
+  border-color: #4d5066 !important;
+}
+
+body.dark .task p {
+  color: #cacde8;
+}
+
+body.dark .info {
+  background-color: #25273c !important;
+}
+
+body.dark .info p,
+body.dark .info button {
+  color: #4d5066 !important;
+}
+
+body.dark .shuffleButtons {
+  background-color: #25273c !important;
+}
+
+body.dark .shuffleButtons button {
+  color: #4d5066;
+}
+
+body.dark .shuffleButtons button.selected {
+  color: #3a7bfd;
+}
+/*# sourceMappingURL=themes.css.map */

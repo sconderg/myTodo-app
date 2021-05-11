@@ -1,0 +1,38 @@
+body.dark {
+  background-color: hsl(235, 21%, 11%);
+  .header {
+    background-image: url("/images/bg-mobile-dark.jpg");
+    @media (min-width: 767px) {
+      background-image: url("/images/bg-desktop-dark.jpg");
+    }
+    .inputContainer {
+      background-color: hsl(235, 24%, 19%);
+      input {
+        color: white;
+      }
+    }
+  }
+  .task {
+    background-color: hsl(235, 24%, 19%);
+    border-color: hsl(233, 14%, 35%) !important;
+    p {
+      color: hsl(234, 39%, 85%);
+    }
+  }
+  .info {
+    background-color: hsl(235, 24%, 19%) !important;
+    p,
+    button {
+      color: hsl(233, 14%, 35%) !important;
+    }
+  }
+  .shuffleButtons {
+    background-color: hsl(235, 24%, 19%) !important;
+    button {
+      color: hsl(233, 14%, 35%);
+      &.selected {
+        color: hsl(220, 98%, 61%);
+      }
+    }
+  }
+}
